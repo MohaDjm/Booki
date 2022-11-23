@@ -1,0 +1,64 @@
+/* Activities */
+
+.activities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  margin-top: 2rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.activities-list > * {
+  background-size: cover;
+  display: flex;
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 200ms;
+}
+
+.activities-list > div:hover {
+  transform: scale(1.02);
+}
+.big {
+  height: 30rem;
+  width: 20rem;
+}
+
+.big1 {
+  background-image: url("../assets/activites/4_small/vieux_port.jpg");
+}
+
+.big2 {
+  background-image: url("../assets/activites/4_small/fort_de_pomegues.jpg");
+}
+
+.big3 {
+  background-image: url("../assets/activites/4_small/parc_calanques.jpg");
+}
+
+.big4 {
+  background-image: url("../assets/activites/4_small/notre_dame.jpg");
+}
+
+.activities-list h3 {
+  background-color: white;
+  margin-top: auto;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+@media (max-width: 1500px) {
+  .activities-list {
+    grid-template-rows: repeat(auto-fit, 15rem);
+  }
+
+  .activities-list > * {
+    grid-column: span 1;
+    grid-row: span 1;
+    height: 15rem;
+  }
+}
